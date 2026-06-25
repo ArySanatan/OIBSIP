@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanatan Kumbhakar | Oasis Infobyte Tasks</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+/* Profile Section */
+        .profile-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #007bff;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-header h1 {
+            font-size: 2.2rem;
+            color: #1a1a1a;
+        }
+
+        .profile-header p {
+            font-size: 1.1rem;
+            color: #555;
+            font-weight: 500;
+        }
+/* tasks */
+        .task-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .task-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .task-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .task-card h2 {
+            font-size: 1.2rem;
+            color: #007bff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .task-card h3 {
+            font-size: 1.5rem;
+            color: #1a1a1a;
+            margin-bottom: 1.5rem;
+        }
+
+/* buttonlinks */
+        .links-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .btn-github {
+            background-color: #24292e;
+            color: #ffffff;
+        }
+        .btn-github:hover { background-color: #000000; }
+
+        .btn-live {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+        .btn-live:hover { background-color: #0056b3; }
+
+        .btn-video {
+            background-color: #ff0000;
+            color: #ffffff;
+        }
+        .btn-video:hover { background-color: #cc0000; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /*Responsive Tweaks*/
+        @media (max-width: 600px) {
+            body { padding: 1rem; }
+            .profile-header h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="profile-header">
+        <img src="TASK_1\profile.png" alt="Sanatan Kumbhakar" class="profile-img">
+        <h1>Hii, I am Sanatan Kumbhakar</h1>
+        <p>Web Development Intern | Oasis Infobyte</p>
+    </header>
+
+    <h1>LEVEL 1</h1>
+    <main class="task-container">
+        <div class="task-card">
+            <h2>Task 1</h2>
+            <h3>Landing Page</h3>
+            <div class="links-group">
+                <a href="#" class="btn btn-github" target="_blank">View GitHub Repo</a>
+                <a href="#" class="btn btn-live" target="_blank">View Active Website</a>
+                <a href="#" class="btn btn-video" target="_blank">Watch Demo Video</a>
+            </div>
+        </div>
+
+        <div class="task-card">
+            <h2>Task 2</h2>
+            <h3>Portfolio Website</h3>
+            <div class="links-group">
+                <a href="#" class="btn btn-github" target="_blank">View GitHub Repo</a>
+                <a href="#" class="btn btn-live" target="_blank">View Active Website</a>
+                <a href="#" class="btn btn-video" target="_blank">Watch Demo Video</a>
+            </div>
+        </div>
+
+        <div class="task-card">
+            <h2>Task 3</h2>
+            <h3>Temperature Converter</h3>
+            <div class="links-group">
+                <a href="#" class="btn btn-github" target="_blank">View GitHub Repo</a>
+                <a href="#" class="btn btn-live" target="_blank">View Active Website</a>
+                <a href="#" class="btn btn-video" target="_blank">Watch Demo Video</a>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
